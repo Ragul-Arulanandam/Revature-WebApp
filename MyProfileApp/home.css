@@ -1,0 +1,71 @@
+
+.name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+.navbar{
+    width: 100%;
+    background-color: #9BECFC;
+    overflow: auto;
+    
+    
+}
+.menus{
+    
+    text-align: center;
+    font-size: 75rem;
+    padding: 15px;
+    font-size: 20px;
+}
+.active{
+    padding-left: 8%;
+}
+.icons{
+    word-spacing: 50px;
+    padding-left: 2%;
+}
+p{
+    margin-top: 40%;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 13%; 
+    color: rgb(4, 15, 26);
+    align-items: center;
+    font-size: 30px;
+}
+
+.containers{
+    display: flex;
+    margin-top: 10%;  
+     color: rgb(12, 1, 1);
+     justify-content:space-evenly ;    
+    
+}
+
+.images{
+    top:30%;
+    padding-left: 15%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+form{
+    margin-top: 4%;
+    margin-right: 80px;
+}
+.Socialmedia{
+    display: flex;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.socialmedia_icons{
+    /* display: inline-flex; */
+    word-spacing: 20px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+}
+
