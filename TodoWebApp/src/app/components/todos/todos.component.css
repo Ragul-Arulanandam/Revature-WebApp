@@ -1,3 +1,12 @@
+
+.imagestyle{
+	background-image: url("src/assets/images/oceanbg.jpg");
+	display: ;
+	width: 100%;
+	height: auto;
+	margin: 0%;
+
+}
 .todo {
 	display: flex;
 	padding: 10px 15px;

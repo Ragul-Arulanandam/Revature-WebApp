@@ -1,0 +1,33 @@
+<div class="container">
+  <!-- Navbar -->
+  <app-navbar [title]="title"></app-navbar>
+
+  <!-- cart-badge -->
+  <app-cart-badge></app-cart-badge>
+
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/">
+        Home
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/items">
+        Items
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/cart">
+        Cart
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/login">
+        Login
+      </a>
+    </li>
+  </ul>
+  <hr />
+
+  <router-outlet></router-outlet>
+</div>

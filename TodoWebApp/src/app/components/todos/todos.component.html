@@ -1,17 +1,18 @@
-<div class="todos container">
-    <form (submit)='addTodo()'>
-        <input type = "text" name = "inputTodo" 
-        placeholder="Enter Todo......." class="todo-input"
-        [(ngModel)] = "inputTodo" />
-        <br>
-        <input type="submit" value="Add Todo's" class="todo-submit"/>
-    </form>
-    <div class="container align-items-center  ">
-    <div *ngFor="let todo of todos; let i = index;" class="todo {{(todo.completed ? 'done' : '') }}">
-        <div class="id">{{ i }} </div>
-        
-        <div class="content" (click)="toggleDone(i)">{{todo.content}}</div>
-        <button class="col-2 btn btn-danger" (click)="deleteTodo(i)">Delete</button>
+<div class="imagestyle">
+    <div class="todos container">
+        <form (submit)='addTodo()'>
+            <input type="text" name="inputTodo" placeholder="Enter Todo......." class="todo-input"
+                [(ngModel)]="inputTodo" />
+            <br>
+            <input type="submit" value="Add Todo's" class="todo-submit" />
+        </form>
+        <div class="container align-items-center  ">
+            <div *ngFor="let todo of todos; let i = index;" class="todo {{(todo.completed ? 'done' : '') }}">
+                <div class="id">{{ i }} </div>
+
+                <div class="content" (click)="toggleDone(i)">{{todo.content}}</div>
+                <button class="col-2 btn btn-danger" (click)="deleteTodo(i)">Delete</button>
+            </div>
+        </div>
     </div>
-</div>
 </div>

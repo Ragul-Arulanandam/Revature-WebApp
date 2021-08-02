@@ -15,9 +15,7 @@ export class TodosComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.todos = [
-     
-    ]
+    this.todos = [ ]
   }
   toggleDone(id: number){
     this.todos.map((v,i) => {

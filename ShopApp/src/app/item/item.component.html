@@ -1,0 +1,45 @@
+<div class="row" appHighlight>
+    <div class="col-3">
+        <img  [src]="item.img_Path" class="img-fluid" />
+    </div>
+    <div class="col-9">
+        <div>{{item.name | uppercase}}- <small>{{item.makeDate | date: 'yyyy-MM'}}</small></div>
+        <div>{{item.price|priceDiscount:item.discount| currency: item.currencyCode : true}}</div>
+        <div>{{item.describe}}</div>
+        <button  (click) = "handleBuy($event)"class="btn btn-dark">buy</button>
+        <br />
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a (click)="changeTab($event,1)" 
+                   class="nav-link" 
+                   [class.active]="currentTab===1"
+                   href="#">Description</a>
+            </li>
+            <li class="nav-item">
+                <a (click)="changeTab($event,2)" 
+                   [ngClass]="{'nav-link':true,active:isTabSelected(2)}"
+                   href="#">Specification</a>
+            </li>
+            <li class="nav-item">
+                <a (click)="changeTab($event,3)"
+                   [ngClass]="{'nav-link':true,active:isTabSelected(3)}"
+                   href="#">Reviews</a>
+            </li>
+        </ul>
+        <div *ngIf="isTabSelected(1)">{{item.description| slice:0:500}}</div>
+        <div *ngIf="currentTab===2">Not Yet</div>
+        <!-- <div *ngIf="isTabSelected(2)">
+            <div *ngFor="let specification of specifications" class="alert alert-info">
+              <app-review [value]="specification"></app-review>
+            </div> -->
+        <!-- <div *ngIf="currentTab===3">None Yet</div> -->
+        <div *ngIf="isTabSelected(3)">
+            <div *ngFor="let review of reviews" class="alert alert-info">
+              <!-- <app-review [value]="review"></app-review> -->
+              <app-review (new-review)="handleNewReview($event)"></app-review>
+            </div>
+            
+
+            <app-review-form></app-review-form>
+    </div>
+</div>

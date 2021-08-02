@@ -1,0 +1,35 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Assus Notebook -14",
+            "price": 100000.00,
+            "discount": 10,
+            "currencyCode": "INR",
+            "description": "Assu products",
+            "img_path": "assets/1.jpg",
+            "makeDate": 1627380081218
+        },
+        {
+            "id": 2,
+            "name": "HP Laptop",
+            "price": 100000.00,
+            "discount": 10,
+            "currencyCode": "INR",
+            "description": "HP products",
+            "img_path": "src/assets/2.jpg",
+            "makeDate": 1627380081218
+        },
+        {
+            "id": 3,
+            "name": "Mac Book",
+            "price": 100000.00,
+            "discount": 10,
+            "currencyCode": "INR",
+            "description": "New Mac pro",
+            "img_path": "src/assets/3.jpg",
+            "makeDate": 1627380081218
+        }
+
+    ]
+}
