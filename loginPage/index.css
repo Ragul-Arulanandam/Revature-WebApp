@@ -1,18 +1,32 @@
- /* body{
-        background-image: url('bg1.jfif');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-    }
 
-         */
 .mainContent{
-    align-items: center;
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    
+    display: flex;
+    flex-flow: column;
+    background-color: rgba(0, 0,0,0.4);
+    width: 500px;
+    height: 150px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    text-shadow: 2px black;
+    outline: none;
+    border-radius: 7px;
+    text-align: center;
+    
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-image:  url('bg.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
 
